@@ -164,3 +164,10 @@ function removeItem(index) {
     document.getElementById(`cart-item-${index}`).remove();
     updateTotal(); 
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loadingSpinner = document.getElementById('loading-spinner');
+    if (loadingSpinner) {
+        loadingSpinner.style.display = 'none'; // Hide the spinner once the page is fully loaded
+    }
+});

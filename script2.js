@@ -66,3 +66,10 @@ document.addEventListener("DOMContentLoaded", () => {
         alert(`${quantity}x ${productName} toegevoegd aan winkelwagen!`);
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loadingSpinner = document.getElementById('loading-spinner');
+    if (loadingSpinner) {
+        loadingSpinner.style.display = 'none'; // Hide the spinner once the page is fully loaded
+    }
+});
